@@ -1,0 +1,119 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/*      Body          */
+
+body{
+background-image: url('../img/blue-background.jpg');
+background-size: cover;
+}
+img.logo-re4{
+    position: absolute;
+    float: left;
+    width: 40%;
+    height: 30%;
+    margin-left: 1%;
+    margin-top: 14%;
+    animation-name:intermitente-img;
+    animation-duration: 6s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+
+}
+
+@keyframes intermitente-img {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/*      Header      */
+
+header{
+    background-color:transparent;
+    width: 100%;
+}
+#top{
+    margin: 0;
+    font-family: monospace;
+    text-align: center;
+    vertical-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+}
+
+/*      Nav Bar     */
+.ulNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(0, 0, 225, 0.5);
+    overflow: hidden;
+}
+
+.liNav{
+    float: left;
+}
+.liNav:hover { 
+    background-color: #ffd200;
+  }
+  .ulNav a:hover{
+    color: darkblue;
+
+  }
+  .active{
+    color: yellow!important;
+    background-color:blue;
+    
+  }
+  .ulNav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    .liNav{float: none;}
+    img.logo-re4{
+        margin-left: 0%;
+        margin-top: 350px;
+        width: 50%;
+        height: 20%;
+    }
+}
+
+#marca{
+    width: auto;
+    height: 10%;
+}
+p.footer{
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 1em;
+}
+footer{
+    display: inline-block;
+    width: 100%;
+    background-color: teal;
+    position:relative;
+    left: 0px;
+    bottom: 0px;
+}
